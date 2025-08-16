@@ -2,6 +2,7 @@ import 'package:demo/riverpod/auto_dispose_modifier/auto_dispose_modifier_screen
 import 'package:demo/riverpod/family_modifier/family_modifier_screen.dart';
 import 'package:demo/riverpod/future_provider/future_provider_screen.dart';
 import 'package:demo/riverpod/listen_provider/listen_provider_screen.dart';
+import 'package:demo/riverpod/provider/provider_screen.dart';
 import 'package:demo/riverpod/select_provider/select_provider_screen.dart';
 import 'package:demo/riverpod/state_notifier_provider/state_notifier_provider_screen.dart';
 import 'package:demo/riverpod/state_provider/state_provider_screen.dart';
@@ -117,6 +118,17 @@ class MyApp extends StatelessWidget {
                 );
               },
               child: Text('SelectProviderScreen'),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => ProviderScreen(),
+                  ),
+                );
+              },
+              child: Text('ProviderScreen'),
             ),
           ],
         ),

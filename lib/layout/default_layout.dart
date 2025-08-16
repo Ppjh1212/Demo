@@ -1,13 +1,15 @@
 import 'package:flutter/material.dart';
 
 class DefaultLayout extends StatelessWidget {
-  const DefaultLayout({
+  DefaultLayout({
     super.key,
     required this.title,
     required this.body,
+    this.actions,
   });
   final String title;
   final Widget body;
+  List<Widget>? actions;
 
   @override
   Widget build(BuildContext context) {
@@ -15,8 +17,9 @@ class DefaultLayout extends StatelessWidget {
       appBar: AppBar(
         title: Text(title),
         centerTitle: true,
+        actions: actions,
       ),
-      body: body
+      body: body,
     );
   }
 }
