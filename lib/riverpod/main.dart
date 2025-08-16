@@ -1,3 +1,5 @@
+import 'package:demo/riverpod/auto_dispose_modifier/auto_dispose_modifier_screen.dart';
+import 'package:demo/riverpod/family_modifier/family_modifier_screen.dart';
 import 'package:demo/riverpod/future_provider/future_provider_screen.dart';
 import 'package:demo/riverpod/state_notifier_provider/state_notifier_provider_screen.dart';
 import 'package:demo/riverpod/state_provider/state_provider_screen.dart';
@@ -69,6 +71,28 @@ class MyApp extends StatelessWidget {
                 );
               },
               child: Text('StreamProviderScreen'),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => FamilyModifierScreen(),
+                  ),
+                );
+              },
+              child: Text('FamilyModifierScreen'),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => AutoDisposeModifierScreen(),
+                  ),
+                );
+              },
+              child: Text('AutoDisposeModifierScreen'),
             ),
           ],
         ),

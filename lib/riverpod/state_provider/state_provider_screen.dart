@@ -1,3 +1,4 @@
+import 'package:demo/layout/default_layout.dart';
 import 'package:demo/riverpod/state_notifier_provider/state_notifier_provider_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -12,7 +13,8 @@ class StateProviderScreen extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final state = ref.watch(numberProvider);
-    return Scaffold(
+    return DefaultLayout(
+      title: 'StateProviderScreen',
       body: SizedBox(
         width: double.infinity,
         child: Column(

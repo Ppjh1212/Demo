@@ -1,3 +1,4 @@
+import 'package:demo/layout/default_layout.dart';
 import 'package:demo/riverpod/riverpod/family_modifier_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -8,7 +9,8 @@ class FamilyModifierScreen extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final state = ref.watch(familyModifierProvider(3));
-    return Scaffold(
+    return DefaultLayout(
+      title: 'FamilyModifierScreen',
       body: Center(
         child: 
           state.when(

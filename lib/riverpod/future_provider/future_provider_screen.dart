@@ -1,3 +1,4 @@
+import 'package:demo/layout/default_layout.dart';
 import 'package:demo/riverpod/riverpod/future_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -8,7 +9,8 @@ class FutureProviderScreen extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final AsyncValue state = ref.watch(multiplesFutureProvider);
-    return Scaffold(
+    return DefaultLayout(
+      title: 'FutureProviderScreen',
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
