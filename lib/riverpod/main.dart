@@ -3,6 +3,7 @@ import 'package:demo/riverpod/family_modifier/family_modifier_screen.dart';
 import 'package:demo/riverpod/future_provider/future_provider_screen.dart';
 import 'package:demo/riverpod/listen_provider/listen_provider_screen.dart';
 import 'package:demo/riverpod/provider/provider_screen.dart';
+import 'package:demo/riverpod/riverpod/provider_observer.dart';
 import 'package:demo/riverpod/select_provider/select_provider_screen.dart';
 import 'package:demo/riverpod/state_notifier_provider/state_notifier_provider_screen.dart';
 import 'package:demo/riverpod/state_provider/state_provider_screen.dart';
@@ -13,6 +14,9 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 void main() {
   runApp(
     ProviderScope(
+      observers: [
+        Logger(),
+      ],
       child: MaterialApp(
         home: MyApp(),
       ),
