@@ -1,5 +1,5 @@
 import 'package:demo/layout/default_layout.dart';
-import 'package:demo/riverpod/riverpod/auto_dispose_modifier_provider.dart';
+import 'package:demo/section8/riverpod/riverpod/auto_dispose_modifier_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 

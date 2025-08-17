@@ -1,6 +1,6 @@
 import 'package:demo/layout/default_layout.dart';
-import 'package:demo/riverpod/model/shopping_item_model.dart';
-import 'package:demo/riverpod/riverpod/state_notifier_provider.dart';
+import 'package:demo/section8/riverpod/model/shopping_item_model.dart';
+import 'package:demo/section8/riverpod/riverpod/state_notifier_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 

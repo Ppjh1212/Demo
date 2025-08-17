@@ -1,4 +1,4 @@
-import 'package:demo/riverpod/model/shopping_item_model.dart';
+import 'package:demo/section8/riverpod/model/shopping_item_model.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 // 제네릭 => <StateNotifier를 상속한 클래스, 그 클래스가 관리하는 상태 타입>

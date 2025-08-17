@@ -1,13 +1,14 @@
-import 'package:demo/riverpod/auto_dispose_modifier/auto_dispose_modifier_screen.dart';
-import 'package:demo/riverpod/family_modifier/family_modifier_screen.dart';
-import 'package:demo/riverpod/future_provider/future_provider_screen.dart';
-import 'package:demo/riverpod/listen_provider/listen_provider_screen.dart';
-import 'package:demo/riverpod/provider/provider_screen.dart';
-import 'package:demo/riverpod/riverpod/provider_observer.dart';
-import 'package:demo/riverpod/select_provider/select_provider_screen.dart';
-import 'package:demo/riverpod/state_notifier_provider/state_notifier_provider_screen.dart';
-import 'package:demo/riverpod/state_provider/state_provider_screen.dart';
-import 'package:demo/riverpod/stream_provider/stream_provider_screen.dart';
+import 'package:demo/layout/default_layout.dart';
+import 'package:demo/section8/riverpod/auto_dispose_modifier/auto_dispose_modifier_screen.dart';
+import 'package:demo/section8/riverpod/family_modifier/family_modifier_screen.dart';
+import 'package:demo/section8/riverpod/future_provider/future_provider_screen.dart';
+import 'package:demo/section8/riverpod/listen_provider/listen_provider_screen.dart';
+import 'package:demo/section8/riverpod/provider/provider_screen.dart';
+import 'package:demo/section8/riverpod/riverpod/provider_observer.dart';
+import 'package:demo/section8/riverpod/select_provider/select_provider_screen.dart';
+import 'package:demo/section8/riverpod/state_notifier_provider/state_notifier_provider_screen.dart';
+import 'package:demo/section8/riverpod/state_provider/state_provider_screen.dart';
+import 'package:demo/section8/riverpod/stream_provider/stream_provider_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
@@ -29,7 +30,8 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return DefaultLayout(
+      title: 'Section8',
       body: SizedBox(
         width: double.infinity,
         child: Column(

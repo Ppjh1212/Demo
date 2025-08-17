@@ -1,4 +1,4 @@
-import 'package:demo/riverpod/model/shopping_item_model.dart';
+import 'package:demo/section8/riverpod/model/shopping_item_model.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 final selectProvider = StateNotifierProvider<SelectNotifier, ShoppingItemModel>(
