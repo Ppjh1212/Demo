@@ -22,5 +22,38 @@ final gStateProvider = AutoDisposeProvider<String>.internal(
 @Deprecated('Will be removed in 3.0. Use Ref instead')
 // ignore: unused_element
 typedef GStateRef = AutoDisposeProviderRef<String>;
+String _$gStateFutureHash() => r'eef3e95f799e15b4647a3851f8ee6b4438b05afa';
+
+/// See also [gStateFuture].
+@ProviderFor(gStateFuture)
+final gStateFutureProvider = AutoDisposeFutureProvider<int>.internal(
+  gStateFuture,
+  name: r'gStateFutureProvider',
+  debugGetCreateSourceHash:
+      const bool.fromEnvironment('dart.vm.product') ? null : _$gStateFutureHash,
+  dependencies: null,
+  allTransitiveDependencies: null,
+);
+
+@Deprecated('Will be removed in 3.0. Use Ref instead')
+// ignore: unused_element
+typedef GStateFutureRef = AutoDisposeFutureProviderRef<int>;
+String _$gStateFuture2Hash() => r'c346965a30436f2ab0f038c27592f51d26b2d4bb';
+
+/// See also [gStateFuture2].
+@ProviderFor(gStateFuture2)
+final gStateFuture2Provider = FutureProvider<int>.internal(
+  gStateFuture2,
+  name: r'gStateFuture2Provider',
+  debugGetCreateSourceHash: const bool.fromEnvironment('dart.vm.product')
+      ? null
+      : _$gStateFuture2Hash,
+  dependencies: null,
+  allTransitiveDependencies: null,
+);
+
+@Deprecated('Will be removed in 3.0. Use Ref instead')
+// ignore: unused_element
+typedef GStateFuture2Ref = FutureProviderRef<int>;
 // ignore_for_file: type=lint
 // ignore_for_file: subtype_of_sealed_class, invalid_use_of_internal_member, invalid_use_of_visible_for_testing_member, deprecated_member_use_from_same_package
